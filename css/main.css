@@ -137,7 +137,7 @@ nav .nav-list{
 
 .main-item form label{
   display: flex;
-  width: 60%;
+  width: 100%;
 font-size: small;
   flex-direction: column;
   color:  rgb(241, 111, 111);
@@ -152,7 +152,7 @@ font-size: small;
  cursor: pointer;
  color: var(--light);
  outline: none;
- width: 30%;
+ width: 46%;
  padding:10px;
  border: none;
  margin-left: 1.5em;
@@ -167,7 +167,7 @@ background: rgb(85, 128, 245);
     width: 85%;
     height: 85%;
 }
-@media (max-width:780px){
+@media (max-width:800px){
  .main-section{
   flex-direction: column-reverse;
 
