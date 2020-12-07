@@ -126,7 +126,7 @@ nav .nav-list{
     width: 100%;
     padding:1em ;
     outline: none;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid var(--btn);
     margin-bottom: 5px;
 }
@@ -148,7 +148,7 @@ nav .nav-list{
 
 .main-item form button{
  background:var(--bright-blue);
- border-radius: 5px;
+ border-radius: 2px;
  cursor: pointer;
  color: var(--light);
  outline: none;
@@ -447,7 +447,7 @@ outline: none;
 padding:10px ;
 border: none;
 background: var(--light-grayish);
-border-radius: 5px;
+border-radius: 2px;
 height: 2.8em;
 margin-bottom: 1em;
 width: 80%;
@@ -460,7 +460,7 @@ outline: none;
 padding:10px ;
 border: none;
 background: var(--bright-blue);
-border-radius: 5px;
+border-radius: 2px;
 height: 2.5em;
 width: 35%;
 color: white;
