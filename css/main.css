@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
     
 }
 
@@ -15,7 +14,7 @@
     --light-gray: hsl(0, 0%, 75%);
     --cyan:hsl(170, 45%, 43%);
     --bright-blue:hsl(224, 93%, 58%);
-    --font-family-Rely:font-family: 'Raleway', sans-serif;
+    --font-family-Rely: 'Raleway', sans-serif;
     --font-family-sans:'Open Sans', sans-serif;
 }
 /* ************************** nav bar ************************* */
@@ -31,7 +30,7 @@ nav .logo{
     padding: 3em;
 }
 nav .logo img{
-height: 2.7em;
+height: 2em;
 width: 6em;
 }
 nav .nav-list{
@@ -53,6 +52,7 @@ nav .nav-list .nav-link .single-link{
 @media (max-width:600px){
     *{
         overflow-x: hidden;
+        border: none;
     }
 
   nav .logo{
@@ -138,7 +138,7 @@ nav .nav-list{
 .main-item form label{
   display: flex;
   width: 100%;
-font-size: small;
+  font-size: small;
   flex-direction: column;
   color:  rgb(241, 111, 111);
   font-family: var(--font-family-sans);
@@ -155,7 +155,7 @@ font-size: small;
  width: 46%;
  padding:10px;
  border: none;
- margin-left: 1.5em;
+ margin-left: 1em;
  height: 2.8em;
 }
 .main-item button:hover {
@@ -166,6 +166,9 @@ background: rgb(85, 128, 245);
 .main-section .main-item img{
     width: 85%;
     height: 85%;
+}
+::placeholder{
+  color: rgb(211, 206, 206);
 }
 @media (max-width:800px){
  .main-section{
@@ -201,6 +204,10 @@ width: 100%;
     width: 100%;
   
 }
+::placeholder{
+  color: rgb(236, 232, 232);
+  opacity: 1;
+}
 
 .main-item form button{
  margin-top: 1em;
@@ -213,9 +220,12 @@ width: 100%;
 /***************************second section ************************* */
 .second-section{
     background: var(--light-grayish);
-    border-radius: 20% 30% 0px 0px; 
+    border-radius: 60%/30%  2% 0 0 ; 
+    object-fit: cover;
+    width: 100%;
     display: flex;
-    padding:3.4em ;
+    padding:5em ;
+    margin-top: 4em;
     
 
 }
@@ -246,17 +256,27 @@ width: 100%;
 .section-item .item1 a {
       font-family: var(--font-family-sans);
       color: var(--cyan);
-      width: 26%;
+      width: 50%;
       text-decoration: none;
       border-bottom: 2px solid var(--cyan);
       padding-bottom: 6px;
+      /* border: 1px solid red; */
 
 }
 .section-item .item1 a:hover {
       color: hsl(171, 46%, 68%);
-     
-      border-bottom: 2px solid hsl(170, 59%, 72%);
       
+
+}
+.section-item .item1 a::after {
+ content:'' ;
+ height: 1px ;
+ width: 12;
+ border-bottom: 2px solid var(--cyan);
+ position: absolute;
+ left:25%;
+ bottom: 0;
+
 
 }
 .section-item .item1 a img {
@@ -321,15 +341,17 @@ width: 100%;
 }
 
 .section-item .item1 h1 {
-     padding: 1em;
+     padding: 0em;
      font-size: 1.2em;
-     padding-left: 1em;
+     padding-left: 2em;
+
 
 }
 .section-item .item1 p {
-      padding: 1em;
-      font-size: small;
-      width: 75%;
+     padding: 1em;
+     font-size: small;
+     text-align: center;
+     width: 75%;
 }
 .section-item .img{
     height: 80%;
@@ -350,9 +372,9 @@ width: 100%;
 }
  .item11{
        display: flex;
-    flex-direction: column;
-      align-items: center;
-    justify-content: center;  
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;  
  }
 .section-item .card-item1{
  margin:3em 7em 2em 0 ;
@@ -360,11 +382,11 @@ width: 100%;
 }
 .section-item .card-item1 h5{
     padding-right: 4em;
-    padding-left: 13px ;
+    padding-left: 0px ;
 }
 .section-item .card-item1 p{
     font-size: small;
-    padding-left: 1em;
+    padding-left: 0px;
     font-family: var(--font-family-sans);
 }
 .section-item .item1 a {
@@ -381,7 +403,7 @@ width: 100%;
 .section-item .item1 a::after {
  content:'' ;
  height: 1px ;
-width: 44%;
+width: 50%;
  border-bottom: 2px solid var(--cyan);
  position: absolute;
  left:25%;
@@ -389,16 +411,14 @@ width: 44%;
 
 
 }
-.section-item .item1 a:hover {
-border-bottom: 2px solid hsl(170, 59%, 72%);
-}
+
 }
 /***************************second section ************************* */
 /***************************main footer ************************* */
 .main-footer{
     background: var(--btn);
     display: flex;
- align-items: center;  
+    align-items: center;  
     flex-wrap: wrap;
 
 }
@@ -409,25 +429,27 @@ border-bottom: 2px solid hsl(170, 59%, 72%);
     padding:5em;
 }
 .main-footer-item1 .h1,.p{
- font-family: var(--font-family-sans);
- line-height: 1.4em;
- color: var(--light-grayish);
+    font-family: var(--font-family-sans);
+    line-height: 1.4em;
+    color: var(--light-grayish);
 }
 .main-footer-item1 p{
-font-size: small;
+    font-size: small;
 }
 .main-footer-item1 form{
     display: flex;
     flex-direction: column;
+
 }
 .main-footer-item1 form input{
 
 outline: none;
 padding:10px ;
 border: none;
-background: white;
+background: var(--light-grayish);
 border-radius: 5px;
 height: 2.8em;
+margin-bottom: 1em;
 width: 80%;
 
     
@@ -442,6 +464,7 @@ border-radius: 5px;
 height: 2.5em;
 width: 35%;
 color: white;
+margin-top: 7px;
 }
 .main-footer-item1 form button:hover{
 background: rgb(85, 128, 245);
@@ -455,11 +478,7 @@ background: rgb(85, 128, 245);
     padding:2em;
     width: 100%;
 }
-.main-footer-item1 form button{
 
-
-width: 80%;
-}
 .main-footer-item1 .h1,.p{
 
  text-align: center;
@@ -473,6 +492,9 @@ font-size: small;
 .main-footer-item1 form{
   
     align-items: center;
+}
+.main-footer-item1 form button{
+width: 100%;
 }
 }
 @media (max-width:1100px){
@@ -499,15 +521,20 @@ footer .footer-item1{
 }
 footer .footer-item1 .img{
     color: white;
-    width: 6em;
-    height: 2.8em;
+    width: 8em;
+    height: 2.1em;
     filter: brightness(0%) invert(1);
  
 }
+
 footer .footer-item1 .location li {
     color: white;
     margin-bottom: 10px ;
     margin-left:8px ;
+ 
+}
+footer .footer-item1 .location li img {
+  width: 1em;
  
 }
 footer .footer-item1 .location li span {
@@ -585,9 +612,8 @@ transition: 1s;
 }
 .social-link{
  align-items: center;
-    padding-top:2em ;
+    padding-top:3em ;
     justify-content: center;
-    margin-bottom: 4em;
 }
 }
 
