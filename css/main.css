@@ -401,7 +401,7 @@ width: 100%;
 .section-item .item1 a {
       font-family: var(--font-family-sans);
       color: var(--cyan);
-      width:100%;
+      width:70%;
       text-decoration: none;
       padding:0;
       text-align: center;
