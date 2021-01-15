@@ -410,17 +410,7 @@ width: 100%;
       position: relative;
 
 }
-.section-item .item1 a::after {
-     content:'' ;
-     height: 1px ;
-     width: 10%;
-/*      border-bottom: 2px solid var(--cyan); */
-     position: absolute;
-     left:25%;
-     bottom: 0;
 
-
-}
 
 }
 /***************************second section ************************* */
