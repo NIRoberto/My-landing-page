@@ -414,7 +414,7 @@ width: 100%;
      content:'' ;
      height: 1px ;
      width: 10%;
-     border-bottom: 2px solid var(--cyan);
+/*      border-bottom: 2px solid var(--cyan); */
      position: absolute;
      left:25%;
      bottom: 0;
