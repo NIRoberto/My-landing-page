@@ -262,9 +262,8 @@ width: 100%;
       color: var(--cyan);
       width: 30%;
       text-decoration: none;
-      border-bottom: 2px solid var(--cyan);
+/*       border-bottom: 2px solid var(--cyan); */
       padding-bottom: 6px;
-      /* border: 1px solid red; */
 
 }
 .section-item .item1 a:hover {
@@ -272,17 +271,7 @@ width: 100%;
       
 
 }
-/* .section-item .item1 a::after {
- content:'' ;
- height: 1px ;
- width: 50%;
- border-bottom: 2px solid var(--cyan);
- position: absolute;
- left:25%;
- bottom: 0;
 
-
-} */
 .section-item .item1 a img {
     padding-top: 3px;
     margin-top: 3px;
